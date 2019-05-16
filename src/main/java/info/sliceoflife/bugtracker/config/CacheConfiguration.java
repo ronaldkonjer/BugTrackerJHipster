@@ -46,6 +46,11 @@ public class CacheConfiguration {
             createCache(cm, info.sliceoflife.bugtracker.domain.User.class.getName());
             createCache(cm, info.sliceoflife.bugtracker.domain.Authority.class.getName());
             createCache(cm, info.sliceoflife.bugtracker.domain.User.class.getName() + ".authorities");
+            createCache(cm, info.sliceoflife.bugtracker.domain.Project.class.getName());
+            createCache(cm, info.sliceoflife.bugtracker.domain.Label.class.getName());
+            createCache(cm, info.sliceoflife.bugtracker.domain.Label.class.getName() + ".tickets");
+            createCache(cm, info.sliceoflife.bugtracker.domain.Ticket.class.getName());
+            createCache(cm, info.sliceoflife.bugtracker.domain.Ticket.class.getName() + ".labels");
             // jhipster-needle-ehcache-add-entry
         };
     }
